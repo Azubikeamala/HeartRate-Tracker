@@ -1,0 +1,24 @@
+﻿@model AlbumApp.Entities.Album
+
+<h2>Album Details</h2>
+
+<div>
+    <h4>Album Information</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Title:</dt>
+        <dd class="col-sm-10">@Model.Title</dd>
+
+        <dt class="col-sm-2">Artist:</dt>
+        <dd class="col-sm-10">@Model.Artist</dd>
+
+        <dt class="col-sm-2">Rating:</dt>
+        <dd class="col-sm-10">@Model.Rating</dd>
+
+        <dt class="col-sm-2">Songs:</dt>
+        <dd class="col-sm-10">@Model.Songs</dd>
+    </dl>
+</div>
+
+<a asp-action="List" class="btn btn-secondary">Back to List</a>
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
